@@ -1,0 +1,21 @@
+{
+    "title": "Arkade Playground",
+    "description": "Let's learn Arkade!",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Hands on Arkade",
+          "text": "steps.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
