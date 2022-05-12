@@ -1,0 +1,2 @@
+- Kyverno is a kubernetes native policy management tool. It is kubernetes native which means you define your policies in declrative YAML just like other k8s resources.
+- Let's see kyverno in action. 

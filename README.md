@@ -1,2 +1,2 @@
 # killercoda-scenarios
-Fun scenarios that you can try out right from your browser 
+Interactive scenarios that you can try out right from your browser 
