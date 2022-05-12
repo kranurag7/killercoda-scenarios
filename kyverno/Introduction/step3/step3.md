@@ -18,7 +18,7 @@ require-limits-and-requests:
 - So we have seen that our policy is effective and denying the request of pods which is not having limits and requests set. 
 - Now let's try to deploy a pod manifest which have request and limits set. 
 
-```
+```bash
 kubectl create -f- << EOF
 apiVersion: v1
 kind: Pod

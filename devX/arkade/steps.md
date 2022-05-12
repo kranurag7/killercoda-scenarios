@@ -6,6 +6,8 @@
 
 `export PATH=$PATH:/usr/local/bin`
 
+- source the *.bashrc* by running `source .bashrc`
+
 - Make sure arkade is installed. Run the command 
   
 `arkade version`{{exec}}
@@ -20,6 +22,8 @@
 - By default all the arkade binaries will get installed in `~/.arkade/bin` directory so put this in the path variable. Add the below line to your *.bashrc*
 
 `export PATH=$PATH:$HOME/.arkade/bin/`
+
+- source the *.bashrc* by running `source .bashrc`
 
 - Change the active namespace to *kube-system* by running the command 
 
@@ -45,8 +49,12 @@
 
 - Add this to the *.bashrc* file.
 
-`export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
-export GOPATH=$HOME/go/`
+```bash 
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export GOPATH=$HOME/go/
+```
+
+- source the *.bashrc* by running `source .bashrc`
 
 - Check if go is installed correctly 
 - Run the command `go version` 
