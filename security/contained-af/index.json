@@ -3,7 +3,8 @@
     "description": "Let's learn Linux capabilities",
     "details": {
       "intro": {
-        "text": "intro.md"
+        "text": "intro.md",
+        "code": "foreground.sh"
       },
       "steps": [
         {
