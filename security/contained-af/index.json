@@ -8,8 +8,7 @@
       "steps": [
         {
           "title": "contained-af playground",
-          "text": "steps.md",
-          "code": "foreground.sh"
+          "text": "steps.md"
         }
       ],
       "finish": {
@@ -17,6 +16,6 @@
       }
     },
     "backend": {
-      "imageid": "kubernetes-kubeadm-2nodes"
+      "imageid": "ubuntu:2004"
     }
   }
