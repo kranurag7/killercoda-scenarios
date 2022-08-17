@@ -3,13 +3,13 @@
     "description": "Let's learn Linux capabilities",
     "details": {
       "intro": {
-        "text": "intro.md",
-        "code": "foreground.sh"
+        "text": "intro.md"
       },
       "steps": [
         {
           "title": "contained-af playground",
-          "text": "steps.md"
+          "text": "steps.md",
+          "code": "foreground.sh"
         }
       ],
       "finish": {
