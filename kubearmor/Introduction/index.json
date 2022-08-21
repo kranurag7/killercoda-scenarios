@@ -1,0 +1,21 @@
+{
+    "title": "kubearmor playground",
+    "description": "kubearmor playground",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "kubearmor playground",
+          "text": "steps.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
