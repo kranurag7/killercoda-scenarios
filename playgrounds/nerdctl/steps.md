@@ -6,22 +6,24 @@
 
 ```
 version=$(curl -sI https://github.com/containerd/nerdctl/releases/latest | grep -i "location:" | awk -F"/" '{ printf "%s", $NF }' | tr -d '\r')
-```
+```{{exec}}
+
 - Check the version you're using. 
 ```
 echo $version
-```{{execute}}
+```{{exec}}
+
 - Now we will use curl to install the nerdctl command line tool. 
 
 ```
 curl -LO https://github.com/containerd/nerdctl/releases/download/$version/nerdctl-${version:1}-linux-amd64.tar.gz
-```{{execute}}
+```{{exec}}
 
 - Now extract this to `/usr/local/bin` 
 
 ```
 sudo tar -xvf nerdctl-${version:1}-linux-amd64.tar.gz -C /usr/local/bin
-```
+```{{exec}}
 
 - Alternatively you can also use arkade to install nerdctl. (preferred as per me)
 
@@ -31,7 +33,7 @@ arkade get nerdctl
 sudo mv /root/.arkade/bin/nerdctl /usr/local/bin/
 ```{{copy}}
 
-- You also need to use the CNI plugins for the proper functioning of nerdctl otherwise you get errors. 
+- You also need to use the CNI plugins for the proper functioning of nerdctl otherwise you will get errors. 
 
 - Get the latest version of the CNI plugin. I'm storing the version with name `cniversion` 
 
@@ -55,3 +57,11 @@ sudo tar -xvf cni-plugins-linux-amd64-$cniversion.tgz -C /usr/libexec/cni/
 ```
 nerdctl run kranurag7/hello-world
 ```{{exec}}
+
+- Let's try running nginx:alpine 
+
+```
+nerdctl run -d -p 8080:80 --name nginx nginx:alpine 
+```{{exec}}
+
+- Check the nginx page [here]({{TRAFFIC_HOST1_8080}})
