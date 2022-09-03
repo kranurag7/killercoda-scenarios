@@ -1,0 +1,5 @@
+- KubeArmor is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operation) of containers and nodes (VMs) at the system level.
+- Kubearmor leverages LSMs under the hood. 
+- You define the policies in Kubernetes native YAML manifests. 
+- kubearmor make sure that the appropriate policies are applied on every node. During the operation, kubearmor takes Linux version, LSMs on the node & their versions in consideration. 
+- You don't have to write apparmor profiles & SELinux policies which requires a steep learning curve. 

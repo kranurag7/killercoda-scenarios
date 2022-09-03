@@ -1,0 +1,21 @@
+{
+    "title": "nerdctl+containerd playground",
+    "description": "nerdctl+containerd playground",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Installing nerdctl",
+          "text": "steps.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu:2004"
+    }
+  }
